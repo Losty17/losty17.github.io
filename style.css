@@ -1,7 +1,8 @@
 body{
     width: 80vw;
     height: 600px;
-    background: linear-gradient(to right, rgb(110, 40, 255), rgb(255, 150, 255));
+    background: linear-gradient(to right, rgba(110, 40, 255, 0.87), rgba(255, 150, 255, 0.8));
+    background-color: pink;
     max-width: 800px;
     margin: 25px auto;
     color: #202020;
