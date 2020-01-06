@@ -1,26 +1,22 @@
 body{
-    width: 90%;
+    width: 80vw;
+    height: 600px;
+    background: linear-gradient(to right, rgb(110, 40, 255), rgb(255, 150, 255));
     max-width: 800px;
-    margin: auto;
-    background: url(media/bg.png);
-    background-size: cover;
-    margin-top: 30px;
-    border-radius: 10px;
-
-    font-family: sans-serif;
-    line-height: 1.5;
+    margin: 25px auto;
+    color: #202020;
 }
 main{
+    font-family: sans-serif;
+    line-height: 1.5;
+    text-align: justify;
     border-radius: 10px;
-    background: #00000034;
+    background: rgba(0, 0, 0, 0.2);
     padding: 15px 40px;
 }
-hr{
-    border-color: black;
-}
 .logo img{
-    width: 200px;
-    height: 200px;
+    width: 150px;
+    height: 150px;
     border-radius: 5px;
 }
 #title, .subtitle, .logo{
@@ -29,12 +25,15 @@ hr{
 }
 .games{
     margin: 30px 0;
+    width: 90%;
+}
+.games h2{
     text-align: center;
-    width: 100%;
 }
 .games table{
-    background: rgba(128, 128, 128, 0.35);
+    width: 50%;
+    background: rgba(200, 200, 200, 0.2);
     border-radius: 5px;
-    padding: 10px;
+    padding: 5px;
     margin: 0 auto;
 }
