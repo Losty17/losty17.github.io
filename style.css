@@ -46,3 +46,13 @@ main{
     padding: 5px 20px;
     margin: 0 auto;
 }
+
+.games::after{
+    content: "";
+    display: block;
+    width: 200px;
+    height: 2px;
+    background: currentColor;
+    border-radius: 10%;
+    margin: 10px auto;
+}
