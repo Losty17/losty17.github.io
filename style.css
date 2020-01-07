@@ -15,7 +15,14 @@ main{
     background: rgba(0, 0, 0, 0.2);
     padding: 15px 40px;
 }
-
+.link{
+    color: #c42fff;
+    text-decoration: none;
+}
+.link:hover{
+    color: #e091ff;
+    text-decoration: underline;
+}
 .logo img{
     width: 150px;
     height: 150px;
