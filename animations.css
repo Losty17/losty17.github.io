@@ -1,0 +1,24 @@
+.logo img:hover{
+    transform: rotate(540deg) scale(1.5);
+}
+
+.mario{
+    border-color: #383838;
+    animation-name: slide;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+    animation-delay: 1s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes slide {
+    0%{
+        width: 600px;
+    }
+    100%{
+        width: 0px;
+    }
+}
+

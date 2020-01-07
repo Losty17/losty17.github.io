@@ -15,10 +15,12 @@ main{
     background: rgba(0, 0, 0, 0.2);
     padding: 15px 40px;
 }
+
 .logo img{
     width: 150px;
     height: 150px;
     border-radius: 5px;
+    transition: 1s ease-out;
 }
 #title, .subtitle, .logo{
     margin: 0;
