@@ -20,14 +20,13 @@ main{
     width: 150px;
     height: 150px;
     border-radius: 5px;
-    transition: 1s ease-out;
 }
 #title, .subtitle, .logo{
     margin: 0;
     text-align: center;
 }
 .games{
-    margin: 30px 0;
+    margin: 30px auto;
     width: 90%;
 }
 .games h2{
@@ -37,6 +36,6 @@ main{
     width: 50%;
     background: rgba(200, 200, 200, 0.2);
     border-radius: 5px;
-    padding: 5px;
+    padding: 5px 20px;
     margin: 0 auto;
 }
