@@ -3,7 +3,6 @@ html{
     overflow: hidden;
 }
 body{
-    background: linear-gradient(90deg, #fbdaff, #d1fdff);
     color: #000000;
     margin: 0; padding: 0;
     perspective: 1px;
@@ -13,39 +12,58 @@ body{
     overflow-x: hidden;
     font-family: sans-serif;
  }
- header{
+ body *{
+    padding: 0; margin: 0;
+}
+ #parallax{
      box-sizing: border-box;
      min-height: 100vh;
      padding: 30vw 0 5vw;
      position: relative;
      transform-style: inherit;
      width: 100vw;
- }
- header h1{
+    z-index: -1;
+}
+#parallax h1{
      margin-top: -100px;
  }
- header, header:before{
+#parallax, #parallax::before{
      background: 50% 50% / cover;
  }
- header::before{
-     bottom: 0;
-     content: "";
-     left: 0;
-     position: absolute;
-     right: 0;
-     top: 0;
-     display: block;
-     background-image: url(../media/bg.jpg);
-     background-size: cover;
-     transform-origin: center center 0;
-     transform: translateZ(-1px) scale(2);
-     z-index: -1;
-     min-height: 100vh;
- }
- header *{
-     font-weight: normal;
-     letter-spacing: .2em;
-     text-align: center;
-     margin: 0;
-     padding: 1em 0;
- }
+#parallax::before{
+    right: 0; left: 0;
+    top: 0; bottom: 0;
+    content: "";
+    position: absolute;
+    display: block;
+    background-image: url(../media/bg.jpg);
+    background-size: cover;
+    transform-origin: center center 0;
+    transform: translateZ(-1px) scale(2);
+    max-height: 100vh;
+}
+#parallax *{
+    font-weight: normal;
+    letter-spacing: .2em;
+    text-align: center;
+    padding: 1em 0;
+}
+.body{
+    box-shadow: -2px -30px 70px rgba(0, 0, 0, .8);
+    background-color: #383838;
+    color: #fff;
+    width: 100vw;
+    min-height: 50vw;
+    height: auto;
+    text-align: center;
+}
+.body h1{
+    padding-top: 100px;
+}
+.simplebox{
+    position: relative;
+    margin: 0 auto;
+    width: 100px;
+    height: 100px;
+    background-color: pink;
+}
