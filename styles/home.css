@@ -37,7 +37,7 @@ body{
 }
 .header-site h1{
     font-family: 'Abril Fatface', cursive;
-    font-size: 80px;
+    font-size: 6.4vw;
     letter-spacing: 10px;
     text-shadow: 3px 0px 4px rgba(0, 0, 0, 0.8);
 }
@@ -54,7 +54,7 @@ body{
 }
 .header-site .row{
     margin: auto;
-    width: 50vw;
+    width: 70vw;
     background-color: rgba(0, 0, 0, 0.18);
     box-shadow: -5px 0px 4px rgba(0, 0, 0, 0.1), 5px 0px 4px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1), 0px -5px 4px rgba(0, 0, 0, 0.1);
 }
