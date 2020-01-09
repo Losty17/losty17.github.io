@@ -4,17 +4,23 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-U-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <title>Losty | ytsoL</title>
+        <link rel="shortcut icon" type="image/x-icon" href="media/favicon.ico">
 
         <!-- Bootstrap -->
         <link href="css/bootstrap.css" rel="stylesheet">
 
         <!-- Style -->
         <link href="styles/home.css" rel="stylesheet">
+
+        <!-- AOS -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     </head>
     <body>
         <script> AOS.init(); </script>
-        <div class="navbar-site">
+        <div class="navbar-site navbar-fixed-top">
             <ul>
                 <li><img alt="Raphtalia" src="media/raphtalia.jpg"></li>
                 <li><div class="linhavertical"></div></li>
@@ -34,7 +40,7 @@
 
                         <p class="lead text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                         <p class="text-center">
-                            <a href="#" class="butn"><span class="glyphicon glyphicon-menu-down"></span></a>
+                            <a href="#content" class="butn"><span class="glyphicon glyphicon-menu-down"></span></a>
                         </p>
                     </div>
 
@@ -43,9 +49,24 @@
             </div>
 
         </section>
-        <section class="site-content">
+        <section class="site-content" id="content">
 
-
+            <ul class="thumbnails" >
+                <li class="col-xs-3 col-md-2">
+                    <a href="#" class="thumbnail" data-aos="fade-right"><img src="media/raphtalia.jpg"></a>
+                </li>
+                <li class="col-xs-3 col-md-2">
+                    <a href="#" class="thumbnail" data-aos="fade-right" data-aos-delay="150"><img src="media/raphtalia.jpg"></a>
+                </li>
+                <li class="col-xs-3 col-md-2">
+                    <a href="#" class="thumbnail"data-aos="fade-right" data-aos-delay="300"><img src="media/raphtalia.jpg"></a>
+                </li>
+            </ul>
+            <div class="container">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. In urna leo, vulputate vitae mauris eu, dictum luctus lacus. Vestibulum sed ante vitae erat faucibus volutpat id id lacus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Aliquam elementum interdum velit ut vulputate. Donec eget egestas tortor, aliquam faucibus felis. Vestibulum nec elementum tellus. Nunc vel quam eu mi posuere malesuada malesuada et nulla. Duis vel lorem quam. Etiam volutpat lacus in posuere sagittis. Vestibulum iaculis sapien nec pharetra scelerisque. Sed tincidunt luctus nisi quis sodales. Donec vehicula sodales nisi pellentesque ullamcorper. Integer volutpat at turpis sed convallis. Ut porttitor justo risus, eget varius libero tincidunt ut. Maecenas ex enim, pulvinar a tristique a, egestas sed eros. Integer pharetra turpis ac sem accumsan tristique.
+                </p>
+            </div>
 
         </section>
     </body>
