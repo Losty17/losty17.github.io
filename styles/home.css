@@ -1,3 +1,8 @@
+html{
+    margin: 0; padding: 0;
+    overflow: hidden;
+    overflow-y: visible;
+}
 .header-site{
     margin: 0; padding: 0;
     background: url(../media/bg.jpg);
@@ -16,18 +21,23 @@
     color: black;
     margin-top: 50px;
 }
+.header-site::after{
+    content: "";
+    filter: blur(2px);
+}
 .linhavertical{
-    height: 70px;
+    height: 50px;
     border-left: 1px solid;
     padding-right: 10px;
 }
 .navbar-site{
+    color: white;
     width: 100vw;
-
+    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(13, 0, 27, 0.5) 40%, rgba(0,0,0,0) 75%);
 }
 .navbar-site img{
     margin: 0; padding: 0; 
-    width: 70px; height: 70px;
+    width: 50px; height: 50px;
 }
 .navbar-site ul{
     margin: 0; padding: 0;
@@ -36,23 +46,24 @@
     width: 100vw;
 }
 .navbar-site li{
+    color: white;
     float: left;
     margin: 5px;
     display: block;
-    font-size: 16px;
+    font-size: 14px;
 }
 .center{
-    color: #333333;
+    color: #ffffff;
     padding-right: 20px;
     position: relative;
-    transform: translateY(3.5vh);
+    transform: translateY(2.5vh);
 }
 .center a{
-    color: #333333;
+    color: #ffffff;
     text-decoration: none;
 }
 .center a:hover, .center a:visited{
-    color: rgb(80, 4, 116);
+    color: rgb(223, 155, 255);
 }
 .butn span{
     margin: 0;
@@ -63,8 +74,10 @@
     color: #000;
 }
 body{
+    color: rgb(230, 230, 230);
     background-color: #555555;
     overflow-x: hidden;
+    overflow-y: visible;
 }
 .thumbnails {
     text-align:center;
@@ -79,4 +92,17 @@ body{
     display: inline-block;
     *display:inline; /* ie7 fix */
     float: none; /* this is the part that makes it work */
+}
+.footer-site{
+    color: black;
+    font-size: 9px;
+    width: 100vw;
+    height: 4.1vh;
+    background-color: #cccccc;
+    box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.5);
+}
+.footer-site p{
+    text-align: center;
+    padding: 0; margin: 0;
+    transform: translateY(1.2vh);
 }
