@@ -79,10 +79,10 @@ html{
 }
 @keyframes buttonidle{
     from{
-        transform: translateY(-1px) scale(1.5);
+        transform: translateY(-1px);
     }
     to{
-        transform: translateY(5px) scale(1.5);
+        transform: translateY(5px);
     }
 }
 
