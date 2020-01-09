@@ -1,3 +1,4 @@
+
 html{
     margin: 0; padding: 0;
     overflow: hidden;
@@ -26,18 +27,18 @@ html{
     filter: blur(2px);
 }
 .linhavertical{
-    height: 50px;
+    height: 40px;
     border-left: 1px solid;
     padding-right: 10px;
 }
 .navbar-site{
     color: white;
     width: 100vw;
-    background: linear-gradient(90deg, rgb(0, 0, 0) 0%, rgba(13, 0, 27, 0.5) 40%, rgba(0,0,0,0) 75%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, .8) 0%, rgba(13, 0, 27, 0.5) 30%, rgba(0,0,0,0) 60%);
 }
 .navbar-site img{
     margin: 0; padding: 0; 
-    width: 50px; height: 50px;
+    width: 40px; height: 40px;
 }
 .navbar-site ul{
     margin: 0; padding: 0;
@@ -56,7 +57,7 @@ html{
     color: #ffffff;
     padding-right: 20px;
     position: relative;
-    transform: translateY(2.5vh);
+    transform: translateY(50%);
 }
 .center a{
     color: #ffffff;
@@ -67,9 +68,24 @@ html{
 }
 .butn span{
     margin: 0;
-    padding-top: 65px;
-    transform: scale(1.8);
+    transition: 1s;
+    margin-top: 65px;
+    animation-name: buttonidle;
+    animation-duration: .8s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
 }
+@keyframes buttonidle{
+    from{
+        transform: translateY(-1px) scale(1.5);
+    }
+    to{
+        transform: translateY(5px) scale(1.5);
+    }
+}
+
 .butn, .butn:hover, .butn:visited, .butn:active{
     color: #000;
 }
@@ -94,15 +110,16 @@ body{
     float: none; /* this is the part that makes it work */
 }
 .footer-site{
+    margin: 0; padding: 0;
     color: black;
     font-size: 9px;
     width: 100vw;
-    height: 4.1vh;
+    height: 2vh;
     background-color: #cccccc;
     box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.5);
 }
 .footer-site p{
     text-align: center;
     padding: 0; margin: 0;
-    transform: translateY(1.2vh);
+    padding-top: 1px;
 }
