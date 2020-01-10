@@ -17,7 +17,7 @@ body{
 
 .hline{
     margin: auto;
-    margin-top: 0;
+    margin-top: 20px;
     margin-bottom: 40px;
     width: 70vw;
     height: 1px;
@@ -134,8 +134,8 @@ body{
 .site-content img{
     margin: 10px;
     margin-right: 50px;
-    height: 10vw;
-    width: 10vw;
+    width: auto;
+    height: 40vw;
     float: left;
 }
 
