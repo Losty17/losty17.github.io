@@ -17,7 +17,7 @@ body{
 /* CLASS */
 
 .hline{
-    margin-top: 30px;
+    margin-top: 0;
     margin-bottom: 30px;
     width: 70vw;
     height: 1px;
@@ -25,15 +25,17 @@ body{
 }
 .header-site{
     margin: 0; padding: 0;
-    background: url(../media/bg.jpg);
+    background: url(../media/bg-min.png);
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     color: #fff;
-    padding-top: 34vh;
-    padding-bottom: 34vh;
+    margin-top: -2vh;
+    padding-top: 30vh;
+    padding-bottom: 30vh;
     align-content: center;
+    transform: scale(1.1);
 }
 .header-site h1{
     font-family: 'Abril Fatface', cursive;
@@ -53,6 +55,7 @@ body{
     box-shadow: 3px 1px 4px rgba(0, 0, 0, 0.8);
 }
 .header-site .row{
+    transform: scale(.8);
     margin: auto;
     width: 70vw;
     background-color: rgba(0, 0, 0, 0.18);
