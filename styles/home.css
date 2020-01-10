@@ -9,21 +9,28 @@ html{
 body{
     color: rgb(221, 221, 221);
     background-color: #303030;
+    overflow-y: hidden;
     overflow-x: hidden;
-    overflow-y: visible;
 }
-
 
 /* CLASS */
 
 .hline{
+    margin: auto;
     margin-top: 0;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
     width: 70vw;
     height: 1px;
     background: white;
 }
+.linhavertical{
+    height: 40px;
+    border-left: 1px solid;
+    padding-right: 10px;
+}
 .header-site{
+    width: 100vw;
+    height: 100vh;
     margin: 0; padding: 0;
     background: url(../media/bg-min.png);
     background-position: center top;
@@ -32,8 +39,8 @@ body{
     /* background-attachment: fixed; */
     color: #fff;
     margin-top: -2vh;
-    padding-top: 30vh;
-    padding-bottom: 30vh;
+    padding-top: 29vh;
+    padding-bottom: 29vh;
     align-content: center;
     transform: scale(1.1);
 }
@@ -64,15 +71,7 @@ body{
 .header-site a{
     margin-top: 50px;
 }
-.header-site::after{
-    content: "";
-    filter: blur(2px);
-}
-.linhavertical{
-    height: 40px;
-    border-left: 1px solid;
-    padding-right: 10px;
-}
+
 .navbar-site{
     color: white;
     width: 100vw;
@@ -114,8 +113,7 @@ body{
     margin-top: 65px;
     animation-name: buttonidle;
     animation-duration: .8s;
-    animation-timing-function: linear;
-    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
@@ -124,20 +122,25 @@ body{
     color: rgb(255, 255, 255);
 }
 
-.thumbnails {
-    text-align:center;
-    margin: 0;
-    padding: 0;
-    margin-top: 10px;
-    float: none;
+.site-content{
+    margin-top: 20px;
+    text-align: justify;
+}
+.site-content p{
+    font-size: 1.1em;
+    margin: 10px;
 }
 
-.thumbnails > li {
-    list-style-type: none;
-    display: inline-block;
-    *display:inline; /* ie7 fix */
-    float: none; /* this is the part that makes it work */
+.site-content img{
+    margin: 10px;
+    margin-right: 50px;
+    height: 10vw;
+    width: 10vw;
+    float: left;
 }
+
+
+
 
 .footer-site{
     margin: 0; padding: 0;
@@ -147,12 +150,16 @@ body{
     height: 2vh;
     background-color: #cccccc;
     box-shadow: 0px -5px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 200px;
 }
 .footer-site p{
     text-align: center;
     padding: 0; margin: 0;
     padding-top: 1px;
 }
+
+/* IDS */
+
 
 /* KEYFRAMES */
 
