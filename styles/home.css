@@ -13,6 +13,8 @@ body{
     overflow-y: hidden;
     overflow-x: hidden;
     font-family: 'Open Sans', sans-serif;
+    justify-content: center;
+    align-items: center;
 }
 h1{
     font-family: 'Roboto', sans-serif;

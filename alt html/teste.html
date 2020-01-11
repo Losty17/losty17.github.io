@@ -1,66 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt">
-    <head>
-       <meta charset="UTF-8">
-       <title>Parallax Test</title>
-       <style>
-           html{
-               height: 100%;
-               overflow: hidden;
-           }
-           body{
-               color: #000000;
-               margin: 0; padding: 0;
-               perspective: 1px;
-               transform-style: preserve-3d;
-               height: 100%;
-               overflow-y: scroll;
-               overflow-x: hidden;
-               font-family: sans-serif;
-            }
-            header{
-                box-sizing: border-box;
-                min-height: 100vh;
-                padding: 30vw 0 5vw;
-                position: relative;
-                transform-style: inherit;
-                width: 100vw;
-            }
-            header h1{
-                margin-top: -100px;
-            }
-            header, header:before{
-                background: 50% 50% / cover;
-            }
-            header::before{
-                bottom: 0;
-                content: "";
-                left: 0;
-                position: absolute;
-                right: 0;
-                top: 0;
-                display: block;
-                background-image: url(../media/bg.jpg);
-                background-size: cover;
-                transform-origin: center center 0;
-                transform: translateZ(-1px) scale(2);
-                z-index: -1;
-                max-height: 100vh;
-            }
-            .image-image{
-                filter: blur(2px);
-            }
-            header *{
-                font-weight: normal;
-                letter-spacing: .2em;
-                text-align: center;
-                margin: 0;
-                padding: 1em 0;
-            }
-       </style>
-       <body>
-           <header class="image">
-                    <h1>Parallax Effect</h1>
-                    <p>No JS // Pure CSS</p>
-           </header>
-       </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900');
+
+    .card-box *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        outline: none;
+        font-family: 'Poppins', sans-serif;
+    }
+    body{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        background: #00d0ff;
+    }
+    .card-box{
+        width: 1100px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        grid-gap: 15px;
+        margin: 0 auto;
+    }
+    .card-box .card{
+        position: relative;
+        width: 300px;
+        height: 400px;
+        margin: 0 auto;
+        background: #fff;
+        transition: .5s;
+    }
+    .card-box .card:hover{
+        box-shadow: 0 30px 50px rgba(0,0,0,.2);
+    }
+    .card-box .card .face{
+        position: absolute;
+        top: 0; left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card-box .card .face.face1{
+        box-sizing: border-box;
+        padding: 20px;
+        text-align: center;
+        background: #fff;
+        color: #013d4a;
+    }
+    .card-box .card .face.face1 h2{
+        margin-top: 60px;
+    }
+    .card-box .card .face.face2{
+        background: #013d4a;
+        transition: .5s;
+    }
+    .card-box .card:hover .face.face2{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        top: 40px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: transparent;
+        border: 2px solid #013d4a;
+    }
+    .card-box .card .face.face2 h2{
+        margin: 0;
+        padding: 0;
+        font-size: 5em;
+        color: #fff;
+        transition: .5s;
+    }
+    .card-box .card:hover .face.face2 h2{
+        color: #013d4a;
+        font-size: 2em;
+    }
+    </style>
+</head>
+<body>
+    <div class="card-box">
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h2>Service One</h2>
+                    <p>
+                        AAAAAAAAAAAAAAAAAAAAAAA
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="face face2">
+                <h2>01</h2>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h2>Service Two</h2>
+                    <p>
+                        AAAAAAAAAAAAAAAAAAAAAAA
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="face face2">
+                <h2>02</h2>
+            </div>
+        </div>
+        <div class="card">
+            <div class="face face1">
+                <div class="content">
+                    <h2>Service Three</h2>
+                    <p>
+                        AAAAAAAAAAAAAAAAAAAAAAA
+                    </p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+            <div class="face face2">
+                <h2>03</h2>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
