@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900');
-        
+
+
+.title-cards{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.title-cards::after{
+    content: "";
+    height: 1px;
+    width: 200px;
+    border-color: white;
+    background-color: white;
+    display: block;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: -10px;
+
+}
 .card-box *{
     margin: 0;
     padding: 0;
