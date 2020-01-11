@@ -24,7 +24,7 @@
     transition: .5s;
 }
 .card-box .card:hover{
-    box-shadow: 0 30px 50px rgba(255,255,255,.2);
+    box-shadow: 0 120px 100px #25535c;
 }
 .card-box .card .face{
     position: absolute;
@@ -39,23 +39,46 @@
     box-sizing: border-box;
     padding: 20px;
     text-align: center;
-    background: #fff;
-    color: #013d4a;
+    background-color: #1d4047;
+    background-size: cover;
+    color: #e3e3e3;
+    top: 0;
+    transition: .5s;
 }
 .card-box .card .face.face1 h2{
-    margin-top: 30px;
+    margin-top: 20px;
 }
 .card-box .card .face.face2{
     background: url(../media/bg-min.png);
     background-size: cover;
+    background-color: black;
     transition: .5s;
+    top: 0;
+}
+.card-box .card:hover .face.face1{
+    top: 60%;
 }
 .card-box .card:hover .face.face2{
-    height: 50px;
-    width: 72px;
-    border-radius: 10%;
-    top: 5px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 2px solid #013d4a;
+    top: -40%;
+    background: url(../media/nitrogif.gif);
+    background-size: cover;
+}
+.card-box p{
+    margin-bottom: 20px;
+}
+.card-box a{
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #e3e3e3;
+    color: #e3e3e3;
+    transition: .3s;
+}
+.card-box a:hover{
+    background-color: #7736d1;
+    border-color: #7736d1;
+    color: white;
+    box-shadow: 5px 0 50px #7736d19a, 
+                -5px 0 50px #7736d19a,
+                0 5px 50px #7736d19a,
+                0 -5px 50px #7736d19a;
 }
