@@ -12,8 +12,11 @@ body{
     background-color: #303030;
     overflow-y: hidden;
     overflow-x: hidden;
+    font-family: 'Open Sans', sans-serif;
 }
-
+h1{
+    font-family: 'Roboto', sans-serif;
+}
 /* CLASS */
 
 .back-image{
@@ -47,8 +50,8 @@ body{
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    /* background-attachment: fixed; */
     color: #fff;
+    font-family: 'Roboto', sans-serif;
     margin-top: -2vh;
     padding-top: 29vh;
     padding-bottom: 29vh;
@@ -56,32 +59,14 @@ body{
     transform: scale(1.1);
 }
 .header-site h1{
-    font-family: 'Abril Fatface', cursive;
-    font-size: 6.4vw;
-    letter-spacing: 10px;
-    text-shadow: 3px 0px 4px rgba(0, 0, 0, 0.8);
-}
-.header-site p{
-    font-family: 'Dosis', sans-serif;
-    text-shadow: 3px 0px 4px rgba(0, 0, 0, 0.8);
-}
-.header-site .hline{
-    width: 10vw;
-    height: 2px;
-    margin-top: 20px;
-    margin-bottom: 0;
-    box-shadow: 3px 1px 4px rgba(0, 0, 0, 0.8);
-}
-.header-site .row{
+    margin-left: 10vw;
+    font-size: 100px;
+    max-width: 80vw;
+    letter-spacing: 20px;
     transform: scale(.8);
-    margin: auto;
-    background-color: rgba(0, 0, 0, 0.18);
-    box-shadow: -5px 0px 4px rgba(0, 0, 0, 0.1), 5px 0px 4px rgba(0, 0, 0, 0.1), 0px 5px 4px rgba(0, 0, 0, 0.1), 0px -5px 4px rgba(0, 0, 0, 0.1);
+    font-weight: lighter;
+    text-shadow: 3px 0px 4px rgba(0, 0, 0, 0.8);
 }
-.header-site a{
-    margin-top: 50px;
-}
-
 .navbar-site{
     color: white;
     width: 100vw;
@@ -117,21 +102,21 @@ body{
 .center a:hover, .center a:visited{
     color: rgb(223, 155, 255);
 }
+.butn p{
+    margin-top: 25vh;
+}
 .butn span{
     margin: 0;
-    transition: 1s;
-    margin-top: 65px;
+
     animation-name: buttonidle;
     animation-duration: .8s;
     animation-timing-function: ease-in-out;
     animation-direction: alternate;
     animation-iteration-count: infinite;
 }
-
 .butn, .butn:hover, .butn:visited, .butn:active{
     color: rgb(255, 255, 255);
 }
-
 .site-content{
     margin-top: 20px;
     text-align: justify;
@@ -141,7 +126,6 @@ body{
     margin: 10px;
     margin-bottom: 25px;
 }
-
 .site-content img{
     margin: 10px;
     margin-top: 25px;
