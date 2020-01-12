@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900');
 
-
 .title-cards{
     font-size: 30px;
     margin-bottom: 30px;
@@ -38,10 +37,11 @@
     height: 200px;
     margin: 0 auto;
     background: #fff;
+    box-shadow: 0 0 70px rgba(0, 0, 0, 0.5);
     transition: .5s;
 }
 .card-box .card:hover{
-    box-shadow: 0 120px 100px #25535c;
+    box-shadow: 0 120px 70px #25535cb4;
 }
 .card-box .card .face{
     position: absolute;
@@ -79,6 +79,7 @@
     top: -40%;
     background: url(../media/nitrogif.gif);
     background-size: cover;
+    transition-delay: 80ms;
 }
 .card-box p{
     margin-bottom: 20px;

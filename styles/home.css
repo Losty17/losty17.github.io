@@ -15,16 +15,21 @@ body{
     font-family: 'Open Sans', sans-serif;
     justify-content: center;
     align-items: center;
+    font-size: 10.5pt;
+    line-height: 1.5;
 }
 h1{
     font-family: 'Roboto', sans-serif;
 }
 /* CLASS */
 
+.container{
+    max-width: 700px;
+}
 .back-image{
-    margin: 0; padding: 0;
+    margin: 60px 0; padding: 0;
     width: 100vw;
-    height: 500px;
+    height: 300px;
     background-attachment: fixed;
     background-size: cover;
     background-position: center;
@@ -59,6 +64,7 @@ h1{
     padding-bottom: 29vh;
     align-content: center;
     transform: scale(1.1);
+    box-shadow: 0 -20px 70px rgba(0, 0, 0, 1);
 }
 .header-site h1{
     margin-left: 10vw;
@@ -92,10 +98,22 @@ h1{
     font-size: 14px;
 }
 .center{
+    margin-top: -10px;
     color: #ffffff;
     padding-right: 20px;
-    position: relative;
-    transform: translateY(50%);
+    position: static;
+    margin-left: 10px;
+    left: 0;
+    transform: translateY(45%);
+}
+.center span{
+    margin: 25px;
+    margin-right: 1.5vw;
+    float: right;
+    transform: scale(1.7);
+}
+.center.menu-glyph a:visited{
+    color: #fff;
 }
 .center a{
     color: #ffffff;
@@ -122,11 +140,6 @@ h1{
 .site-content{
     margin-top: 20px;
     text-align: justify;
-}
-.site-content p{
-    font-size: 1.1em;
-    margin: 10px;
-    margin-bottom: 25px;
 }
 .site-content img{
     margin: 10px;
