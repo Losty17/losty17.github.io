@@ -17,4 +17,10 @@ $(window).scroll(function(){
             transform: `rotate(180deg)`
         })
     }
+    
+    if (scroll >= 900) {
+        $('.navbar-site').css({
+            background: rgb(13, 0, 27);  
+        })
+    }
 })
