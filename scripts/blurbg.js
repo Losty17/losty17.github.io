@@ -20,7 +20,7 @@ $(window).scroll(function(){
     
     if (scroll >= 900) {
         $('.navbar-site').css({
-            background: rgb(13, 0, 27);  
+            background: 'rgb(13, 0, 27)'  
         })
     }
 })
